@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#008080"/>
+  <title>Sindhudurg AI Travel Planner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <h1>Sindhudurg AI Travel Planner 🌴</h1>
+  <form id="tripForm">
+    <input type="text" placeholder="Destination (e.g., Tarkarli)" name="destination" required />
+    <input type="number" placeholder="Trip Duration (days)" name="duration" required />
+    <input type="number" placeholder="Number of People" name="people" required />
+    <input type="number" placeholder="Budget (INR)" name="budget" required />
+    <button type="submit">Generate Itinerary</button>
+  </form>
+  <pre id="output"></pre>
+  <button id="downloadPdf" hidden>Download PDF</button>
+
+  <script src="app.js"></script>
+  <script src="gemini.js"></script>
+</body>
+</html>
